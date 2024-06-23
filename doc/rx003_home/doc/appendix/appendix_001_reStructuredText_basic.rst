@@ -1,7 +1,7 @@
 .. _restructuredtext_basic:
 
 
-reStructuredText basic
+reStructuredText 기초문법
 ****************************************************************
 
 * 다음 웹페이지들을 참조했음
