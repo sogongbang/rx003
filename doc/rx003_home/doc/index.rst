@@ -11,16 +11,14 @@ RX003 Home
    :maxdepth: 3
    :caption: 목차:
 
-   Home
+   About
 
    News
 
+   Photo
+
    TechTalk
 
-   Projects
-
-   Photo
-   
    Technical_Reports
 
    Members
