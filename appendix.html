@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appendix &mdash; RX003 Home 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=a5c4661c" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2709fde1"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="_static/copybutton.js?v=f281be69"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="참고 문헌" href="references.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            RX003 Home
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">목차:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="About.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="News.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Photo.html">Photo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TechTalk.html">TechTalk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Technical_Reports.html">Technical reports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Members.html">Members</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">참고 문헌</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Appendix</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#restructuredtext">reStructuredText 기초문법</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sections">Sections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#figures">Figures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#equations">Equations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#table">Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hyperlinks">Hyperlinks</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#external-links">External links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#internal-links">Internal links</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">기타 참고 사항</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rx003">RX003 홈 개발 방법</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ubiworks">ubiworks 도구 설치</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">ubiworks 소스트리 받아오기</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sphinx">Sphinx 도구 설치</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rx003-ubinos">RX003 홈페이지 개발을 위한 ubinos 라이브러리 받아오기</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rx003-build">RX003 홈를 로컬에서 build 및 확인</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RX003 Home</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Appendix</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/appendix.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="appendix">
+<span id="id1"></span><h1>Appendix<a class="headerlink" href="#appendix" title="Link to this heading"></a></h1>
+<section id="restructuredtext">
+<span id="restructuredtext-basic"></span><h2>reStructuredText 기초문법<a class="headerlink" href="#restructuredtext" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt>다음 웹페이지들을 참조했음</dt><dd><ul>
+<li><p><a class="reference external" href="https://sublime-and-sphinx-guide.readthedocs.io/en/latest">https://sublime-and-sphinx-guide.readthedocs.io/en/latest</a></p></li>
+<li><p><a class="reference external" href="https://www.sphinx-doc.org/en/master">https://www.sphinx-doc.org/en/master</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<section id="sections">
+<h3>Sections<a class="headerlink" href="#sections" title="Link to this heading"></a></h3>
+<ul>
+<li><p>parts (Sprint)</p>
+<blockquote>
+<div><div class="highlight-RST notranslate"><div class="highlight"><pre><span></span><span class="gh">Parts title</span>
+<span class="gh">#####################################################################</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>chapters (Day)</p>
+<blockquote>
+<div><div class="highlight-RST notranslate"><div class="highlight"><pre><span></span><span class="gh">Chapter title</span>
+<span class="gh">****************************************************************</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>sections (Work)</p>
+<blockquote>
+<div><div class="highlight-RST notranslate"><div class="highlight"><pre><span></span><span class="gh">Section title</span>
+<span class="gh">===========================================================</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>subsections</p>
+<blockquote>
+<div><div class="highlight-RST notranslate"><div class="highlight"><pre><span></span><span class="gh">Subsection title</span>
+<span class="gh">------------------------------------------------------</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>subsubsections</p>
+<blockquote>
+<div><div class="highlight-RST notranslate"><div class="highlight"><pre><span></span><span class="gh">Subsubsection title</span>
+<span class="gh">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>paragraphs</p>
+<blockquote>
+<div><div class="highlight-RST notranslate"><div class="highlight"><pre><span></span><span class="gh">Paragraph title</span>
+<span class="gh">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><dl>
+<dt>구분 선</dt><dd><div class="highlight-RST notranslate"><div class="highlight"><pre><span></span>-------------------------------------------------------------------------------
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="figures">
+<h3>Figures<a class="headerlink" href="#figures" title="Link to this heading"></a></h3>
+<div class="highlight-RST notranslate"><div class="highlight"><pre><span></span><span class="na">:numref:</span><span class="nv">`figure_005_01_temp`</span> 은 유비노스 구조를 보여준다.
+
+<span class="p">..</span> <span class="nt">_figure_005_01_temp:</span>
+
+<span class="p">..</span> <span class="ow">figure</span><span class="p">::</span> /_static/image/ubinos_architecture.png
+    <span class="nc">:width:</span> 90%
+    <span class="nc">:align:</span> center
+    <span class="nc">:alt:</span> Ubinos architecture
+
+    Ubinos architecture
+</pre></div>
+</div>
+<p><a class="reference internal" href="#figure-005-01-temp"><span class="std std-numref">그림 8</span></a> 은 유비노스 구조를 보여준다.</p>
+<figure class="align-center" id="id4">
+<span id="figure-005-01-temp"></span><a class="reference internal image-reference" href="_images/ubinos_architecture.png"><img alt="Ubinos architecture" src="_images/ubinos_architecture.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-number">그림 8 </span><span class="caption-text">Ubinos architecture</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="equations">
+<h3>Equations<a class="headerlink" href="#equations" title="Link to this heading"></a></h3>
+<div class="highlight-RST notranslate"><div class="highlight"><pre><span></span>로봇 회전각속도 <span class="na">:math:</span><span class="nv">`w_k`</span> 는 식 <span class="na">:eq:</span><span class="nv">`eq1_temp`</span> 을 사용해 구할수 있다.
+
+<span class="p">..</span> <span class="ow">math</span><span class="p">::</span>
+    <span class="nc">:label:</span> eq1_temp
+
+    v_k = \frac{\Delta s_k}{\Delta t} = \frac{v_k^r + v_k^l}{2} = \frac{r \left( \omega_k^r + \omega_k^l \right)}{2}
+</pre></div>
+</div>
+<p>로봇 회전각속도 <span class="math notranslate nohighlight">\(w_k\)</span> 는 식 <a class="reference internal" href="#equation-eq1-temp">(1)</a> 을 사용해 구할수 있다.</p>
+<div class="math notranslate nohighlight" id="equation-eq1-temp">
+<span class="eqno">(1)<a class="headerlink" href="#equation-eq1-temp" title="Link to this equation"></a></span>\[v_k = \frac{\Delta s_k}{\Delta t} = \frac{v_k^r + v_k^l}{2} = \frac{r \left( \omega_k^r + \omega_k^l \right)}{2}\]</div>
+</section>
+<section id="table">
+<h3>Table<a class="headerlink" href="#table" title="Link to this heading"></a></h3>
+<div class="highlight-RST notranslate"><div class="highlight"><pre><span></span><span class="na">:numref:</span><span class="nv">`table_91_temp`</span> 은 ...
+
+<span class="p">..</span> <span class="nt">_table_91_temp:</span>
+
+<span class="p">..</span> <span class="ow">table</span><span class="p">::</span> 표 예
+    <span class="nc">:align:</span> center
+
+    +------------------------+------------+----------+----------+
+    <span class="o">|</span> Header row, column 1   | Header 2   | Header 3 | Header 4 |
+    <span class="o">|</span> (header rows optional) |            |          |          |
+    +========================+============+==========+==========+
+    <span class="o">|</span> body row 1, column 1   | column 2   | column 3 | column 4 |
+    +------------------------+------------+----------+----------+
+    <span class="o">|</span> body row 2             | Cells may span columns.          |
+    +------------------------+------------+---------------------+
+    <span class="o">|</span> body row 3             | Cells may  | - Table cells       |
+    +------------------------+ span rows. | - contain           |
+    <span class="o">|</span> body row 4             |            | - body elements.    |
+    +------------------------+------------+---------------------+
+</pre></div>
+</div>
+<p><a class="reference internal" href="#table-91-temp"><span class="std std-numref">표 1</span></a> 은 …</p>
+<span id="table-91-temp"></span><table class="docutils align-center" id="id5">
+<caption><span class="caption-number">표 1 </span><span class="caption-text">표 예</span><a class="headerlink" href="#id5" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Header row, column 1
+(header rows optional)</p></th>
+<th class="head"><p>Header 2</p></th>
+<th class="head"><p>Header 3</p></th>
+<th class="head"><p>Header 4</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>body row 1, column 1</p></td>
+<td><p>column 2</p></td>
+<td><p>column 3</p></td>
+<td><p>column 4</p></td>
+</tr>
+<tr class="row-odd"><td><p>body row 2</p></td>
+<td colspan="3"><p>Cells may span columns.</p></td>
+</tr>
+<tr class="row-even"><td><p>body row 3</p></td>
+<td rowspan="2"><p>Cells may
+span rows.</p></td>
+<td colspan="2" rowspan="2"><ul class="simple">
+<li><p>Table cells</p></li>
+<li><p>contain</p></li>
+<li><p>body elements.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>body row 4</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="hyperlinks">
+<h3>Hyperlinks<a class="headerlink" href="#hyperlinks" title="Link to this heading"></a></h3>
+<section id="external-links">
+<h4>External links<a class="headerlink" href="#external-links" title="Link to this heading"></a></h4>
+<div class="highlight-RST notranslate"><div class="highlight"><pre><span></span><span class="s">`Ubinos </span><span class="si">&lt;https://ubinos.org&gt;</span><span class="s">`_</span>
+
+<span class="s">`&lt;https://ubinos.org&gt;`_</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="https://ubinos.org">Ubinos</a></p>
+<p><a class="reference external" href="https://ubinos.org">https://ubinos.org</a></p>
+</section>
+<section id="internal-links">
+<h4>Internal links<a class="headerlink" href="#internal-links" title="Link to this heading"></a></h4>
+<div class="highlight-RST notranslate"><div class="highlight"><pre><span></span><span class="na">:ref:</span><span class="nv">`restructuredtext_basic`</span>
+</pre></div>
+</div>
+<p><a class="reference internal" href="#restructuredtext-basic"><span class="std std-ref">reStructuredText 기초문법</span></a></p>
+</section>
+</section>
+<section id="id2">
+<h3>기타 참고 사항<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><dl class="simple">
+<dt>파일과 디렉토리 이름에 한글 포함시키면 안 된다.</dt><dd><ul>
+<li><p>한글이 포함되면 latex pdf build 중에 오류가 발생할 수 있다.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<hr class="docutils" />
+</section>
+</section>
+<section id="rx003">
+<span id="appendix-001-how-to-edit-the-doc"></span><h2>RX003 홈 개발 방법<a class="headerlink" href="#rx003" title="Link to this heading"></a></h2>
+<section id="ubiworks">
+<h3>ubiworks 도구 설치<a class="headerlink" href="#ubiworks" title="Link to this heading"></a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://ubinos.org">https://ubinos.org</a> –&gt; Getting Started Guide –&gt; 윈도우에 개발 환경 설정하기 참조</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="id3">
+<h3>ubiworks 소스트리 받아오기<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://ubinos.org">https://ubinos.org</a> –&gt; Getting Started Guide 참조</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="sphinx">
+<h3>Sphinx 도구 설치<a class="headerlink" href="#sphinx" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p><a class="reference external" href="https://github.com/sogongbang/sphinx_doc_materials">https://github.com/sogongbang/sphinx_doc_materials</a> –&gt; README 참조</p>
+</div></blockquote>
+</section>
+<section id="rx003-ubinos">
+<h3>RX003 홈페이지 개발을 위한 ubinos 라이브러리 받아오기<a class="headerlink" href="#rx003-ubinos" title="Link to this heading"></a></h3>
+<blockquote>
+<div><ul>
+<li><p>ubiworks/make/liblist.json의 내용을 다음으로 대체</p>
+<blockquote>
+<div><div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sphinx_doc_materials&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;git@github.com:sogongbang/sphinx_doc_materials.git&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;branch_tag_commit&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;branch&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ubinos-main&quot;</span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;rx003&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;git@github.com:sogongbang/rx003.git&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;branch_tag_commit&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;branch&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ubinos-main&quot;</span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>다음 과정을 수행해 라이브러리 받아오기</p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt>VSCode –&gt; Menu –&gt; Terminal –&gt; Run build Task… –&gt; make xmgr</dt><dd><ul>
+<li><p>Check “Hide ubinos default library list”</p></li>
+<li><p>Check “rx003”, “sphinx_doc_materials”</p></li>
+<li><p>Press “Install”</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</section>
+<section id="rx003-build">
+<h3>RX003 홈를 로컬에서 build 및 확인<a class="headerlink" href="#rx003-build" title="Link to this heading"></a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt>VSCode –&gt; Menu –&gt; Terminal –&gt; Run build Task… –&gt; make xsel</dt><dd><ul>
+<li><p>Select rx003_home_html</p></li>
+<li><p>Press “Select”</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>VSCode –&gt; Menu –&gt; Terminal –&gt; Run build Task… –&gt; make rebuildd</p></li>
+<li><p>VSCode –&gt; Menu –&gt; Terminal –&gt; Run build Task… –&gt; make xrun</p></li>
+</ul>
+</div></blockquote>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="references.html" class="btn btn-neutral float-left" title="참고 문헌" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, RX003.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
